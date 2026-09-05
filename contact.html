@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Casement Lighting Co.</title>
+  <meta name="description" content="Get in touch with Casement Lighting Co. to start a residential, commercial, or landscape lighting project.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="nav-bar">
+      <a class="brand" href="index.html">
+        <img src="images/logo-mark.svg" alt="" width="32" height="32">
+        Casement Lighting Co.
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="page-header">
+      <div class="container">
+        <span class="eyebrow">Contact</span>
+        <h1>Let's talk about your space</h1>
+        <p>Tell us a bit about your project below, or reach out directly — we typically reply within one business day.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-layout">
+
+        <div>
+          <h2>Send a message</h2>
+          <form id="contact-form" novalidate>
+
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your full name">
+              <span class="field-error" id="name-error"></span>
+            </div>
+
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com">
+              <span class="field-error" id="email-error"></span>
+            </div>
+
+            <div class="form-field">
+              <label for="phone">Phone <span class="hint">(optional)</span></label>
+              <input type="tel" id="phone" name="phone" placeholder="(503) 555-0118">
+              <span class="field-error" id="phone-error"></span>
+            </div>
+
+            <div class="form-field">
+              <label for="project-type">Project type</label>
+              <select id="project-type" name="project-type">
+                <option value="">Select one…</option>
+                <option value="residential">Residential lighting</option>
+                <option value="commercial">Commercial / retail</option>
+                <option value="landscape">Landscape / exterior</option>
+                <option value="audit">Lighting audit</option>
+                <option value="smart">Smart lighting</option>
+                <option value="other">Something else</option>
+              </select>
+              <span class="field-error" id="project-type-error"></span>
+            </div>
+
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell us about your space and what you're hoping for..."></textarea>
+              <span class="field-error" id="message-error"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send message</button>
+            <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <div>
+          <h2>Other ways to reach us</h2>
+          <div class="contact-info-list">
+            <div>
+              <h3>Email</h3>
+              <p><a href="mailto:hello@casementlighting.example">hello@casementlighting.example</a></p>
+            </div>
+            <div>
+              <h3>Phone</h3>
+              <p><a href="tel:+15035550118">(503) 555-0118</a></p>
+            </div>
+            <div>
+              <h3>Studio hours</h3>
+              <p>Monday–Friday, 9am–5pm Pacific<br>Site visits by appointment</p>
+            </div>
+          </div>
+
+          <div class="service-area">
+            <h3>Service area</h3>
+            <p>We work with clients throughout the Pacific Northwest, with site visits available within roughly 60 miles of Portland, OR. Remote consultations are available anywhere.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>Casement Lighting Co.</h3>
+          <p>Residential, commercial, and landscape lighting design based in the Pacific Northwest, working with clients regionally.</p>
+        </div>
+        <div>
+          <h3>Site</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="mailto:hello@casementlighting.example">hello@casementlighting.example</a></li>
+            <li><a href="tel:+15035550118">(503) 555-0118</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 Casement Lighting Co. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
